@@ -2,17 +2,18 @@
 
 int main(void)
 {
-    int den, num, x, y, temp;
+    int num, den, x, y, temp;
     printf("Enter a fraction: ");
-    scanf("%d/%d", &den, &num);
-    x = den;
-    y = num;
+    scanf("%d/%d", &num, &den);
+    x = num;
+    y = den;
     while (y != 0)
     {
         temp = x % y;
         x = y;
         y = temp;
     }
-    printf("In lowest terms: %d/%d\n", den / x, num / x);
+
+    printf("In lowest terms: %d/%d\n", num / x, den / x);
     return 0;
 }
