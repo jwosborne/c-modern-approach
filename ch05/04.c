@@ -9,23 +9,23 @@ int main(void)
     {
         printf("Calm\n");
     }
-    else if (knots >= 1 && knots <= 3)
+    else if (knots <= 3)
     {
         printf("Light air\n");
     }
-    else if (knots >= 4 && knots <= 27)
+    else if (knots <= 27)
     {
         printf("Breeze\n");
     }
-    else if (knots >= 28 && knots <= 47)
+    else if (knots <= 47)
     {
         printf("Gale\n");
     }
-    else if (knots >= 48 && knots <= 63)
+    else if (knots <= 63)
     {
         printf("Storm\n");
     }
-    else if (knots > 63)
+    else
     {
         printf("Hurricane\n");
     }
